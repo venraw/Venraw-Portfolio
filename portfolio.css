@@ -22,6 +22,13 @@ img{
   display: none !important;
 }
 
+/*----------------- ADD SHADOW TO HAMBURGER MENU OPEN -----------------
+.header ul.active {
+    right: 0;
+    box-shadow: -200px 0 0 200px rgba(23, 45, 49, 0.5);
+}
+    */
+
 a{
     text-decoration: none;
 }
@@ -774,7 +781,7 @@ nav ul li a{
     gap: 16px;
     padding: 48px 0;
 
-    transition: right 0.6s ease;
+    transition: right 0.5s ease-in-out;
     z-index: 1000;
   }
 
@@ -786,6 +793,16 @@ nav ul li a{
     color: white;
     font-size: 16px;
     font-weight: 600;
+  }
+
+  .talk {
+    margin-top: 32px;
+  }
+
+  .talk a {
+    background-color: #e3fafc;
+    color: #212529;
+    padding: 10px 56px;
   }
 
   /* ---------- HERO ---------- */
