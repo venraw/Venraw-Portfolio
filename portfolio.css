@@ -699,6 +699,12 @@ nav ul li a{
 .footer-links{
     width: 150px;
 }
+
+.footer-links a:hover {
+  color: #66d9e8;
+  transition: 0.2s ease;
+}
+
 .footer-text h1{
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
@@ -734,7 +740,70 @@ nav ul li a{
     padding-top: 16px;
 }
 
+
+
+
+
+
+/*------------------- Back To The Top -----------------------------------*/
+
+.back-to-top {
+  position: fixed;      /* Keeps it stuck in one spot on the screen */
+  bottom: 20px;         /* 20px from the bottom edge */
+  right: 20px;          /* 20px from the right edge */
+  background-color: #0b7285; /* Use your Native Pot orange! */
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;   /* Makes it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;        /* Ensures it stays above all other sections */
+  transition: 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #0b7285;
+  transform: translateY(-5px); /* Gentle lift on hover */
+}
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* ... your other styles ... */
+  
+  /* Add these two lines */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+/* We will use JavaScript to add this "active" class */
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+
+
+
 /* =====================End Of Code For Desktop =======================*/
+
+
+
+
+
+
+
 
 
 

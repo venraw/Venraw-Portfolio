@@ -458,6 +458,11 @@
   </div>
 </div>
 
+
+
+ <a href="#top" class="back-to-top" id="backToTop">
+  <i class="fas fa-arrow-up"></i> </a>
+
 <p class="copyright">&copy; 2026 Venraw. All rights reserved.</p>
 
 </section>
@@ -465,7 +470,7 @@
         
 
 
-
+<!--------  NAV BAR ---------------->
 <script>
   const menuToggle = document.querySelector('.menu-toggle');
   const menuClose = document.querySelector('.menu-close');
@@ -497,6 +502,22 @@ navLinks.forEach(link => {
     duration: 1100,   // increase this (default is 400–800)
     easing: 'ease-in-out',
     once: true
+  });
+</script>
+
+
+<!------------ BACK TO TOP ------------------->
+<script>
+  const backToTopButton = document.querySelector("#backToTop");
+
+  window.addEventListener("scroll", () => {
+    // If the user has scrolled more than 300px down
+    if (window.pageYOffset > 300) {
+      backToTopButton.classList.add("show");
+    } else {
+      // If the user is at the top (less than 300px)
+      backToTopButton.classList.remove("show");
+    }
   });
 </script>
 
